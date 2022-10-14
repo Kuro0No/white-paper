@@ -1,0 +1,56 @@
+.border-left-copyLink{
+  border-left: 1px solid #D3DCE4;
+}
+
+.copy-link-container {
+
+  svg {
+      color: #6490E2 !important;
+
+  }
+
+  .copy-link {
+      font-weight: 600;
+      color: #3B454E;
+      cursor: pointer;
+
+      p {
+          margin: 0;
+          margin-left: 10px;
+      }
+  }
+
+  .toasty {
+      position: fixed !important;
+      right: 24px;
+      bottom: 24px;
+
+      .close {
+          color: #3B454E;
+          cursor: pointer;
+          position: relative;
+          font-size: 16px;
+          // position: absolute;
+          // right: 10px;
+          // top: 0;
+
+      }
+
+
+      .MuiSnackbarContent-root {
+          background: #F5F7F9;
+          width: 400px;
+          align-items: flex-start;
+          .description-toast {
+              color: #000;
+          }
+
+          .description-toast {
+              p {
+                  margin: 0;
+              }
+          }
+      }
+  }
+
+}

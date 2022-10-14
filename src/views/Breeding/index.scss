@@ -1,0 +1,174 @@
+.breeding-wrapper {
+  background: rgba(255, 255, 255, 0.6);
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+
+  @media screen and (max-width:575px) {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  margin: 0;
+  position: relative;
+
+  .border--bot {
+      border-bottom: 1px solid #E3E8ED;
+  }
+
+ 
+
+  .breeding_container {
+
+
+      .paper-container {
+          @media screen and (max-width:768px) {
+              .pl-0 {
+                  padding-right: 0;
+                  margin-bottom: 15px;
+              }
+          }
+      }
+
+      .paper {
+          border: 1px solid #E3E8ED;
+          border-radius: 5px;
+          transition: ease .3s;
+
+          &:hover {
+              transition: ease .3s;
+              transform: translateY(-5px);
+              color: #3884FF;
+          }
+
+          .action {
+              color: #8899A8;
+              font-size: 12px;
+          }
+
+          .des-paper {
+              @media screen and (min-width:768px) {
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  width: 180px;
+                  height: 1.2em;
+                  white-space: nowrap;
+              }
+
+          }
+      }
+
+      .arrow {
+          color: #3B454E;
+          filter: opacity(.4);
+          width: 24px;
+      }
+
+      .more-container {
+          @media screen and (min-width:1200px) {
+              display: none;
+          }
+      }
+
+      .border--right {
+          border-right: 1px solid #E3E8ED;
+      }
+
+      .border-top--none {
+          border-top: none;
+      }
+
+      td {
+          border-top: none;
+          border-bottom: 1px solid #E3E8ED;
+      }
+
+      th {
+          border-bottom: 1px solid #E3E8ED !important;
+      }
+
+      .title {
+          padding: 24px 0;
+          margin-bottom: 16px;
+          font-family: gitbook-content-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 56px;
+          color: #3B454E;
+          border-bottom: 1px solid #E3E8ED;
+
+          @media screen and (max-width:616px) {
+              font-size: 38px;
+
+          }
+          @media screen and (max-width:575px) {
+              font-size: 28px;
+
+          }
+
+          .more-icon {
+              cursor: pointer;
+
+          }
+      }
+
+      .des-table {
+          font-style: italic;
+
+          p {
+              font-weight: 600;
+              color: #3B454E;
+          }
+      }
+
+      #genetics {
+          padding-top: 24px;
+
+          h2 {
+              color: #3B454E;
+              font-size: 24px;
+              font-weight: 600;
+              padding-bottom: 8px;
+          }
+
+          img {
+              width: 100%;
+          }
+      }
+  }
+
+  .footer {
+      display: block;
+
+      @media screen and (min-width: 1024px) {
+          display: flex;
+          justify-content: space-between;
+
+          .description {
+              margin: 0 !important;
+          }
+      }
+
+      div {
+          color: #8899A8;
+      }
+
+      svg {
+          background-color: rgb(245, 247, 249);
+          color: rgb(92, 105, 117);
+          border-radius: 50%;
+          cursor: pointer;
+          padding: 2px;
+
+          &:hover {
+              background-color: rgb(0, 136, 71);
+              color: #fff;
+          }
+      }
+
+      .choose-icon {
+          background-color: rgb(0, 136, 71);
+          color: #fff;
+      }
+  }
+}

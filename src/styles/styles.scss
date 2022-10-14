@@ -17,7 +17,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.bold{
+  font-weight: 600;
+}
+.ps-4 {
+  padding-left: 1rem;
+}
+.me-2{
+  padding-right: .5rem;
+}
+.me-4{
+  padding-right: 1rem;
+}
+.ms-4 {
+  margin-left: 1rem;
+}
+.my-24{
+  margin: 24px 0;
+}
+.py-24{
+  padding: 24px 0;
+}
+.ps-24{
+  padding-left: 24px;
+}
+.ps-8 {
+  padding-left: 2rem;
+}
+.ps-12 {
+  padding-left: 3rem;
+}
 
+// .d-flex{
+//   display: flex;
+// }
 .appLanding {
   display: flex;
   flex: 1;

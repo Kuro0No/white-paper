@@ -1,0 +1,250 @@
+$height: 64px;
+
+
+.open-modal {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidebar_container {
+  padding-left: 24px;
+  position: relative;
+
+  @media screen and (min-width:768px) {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+
+  .powered {
+    background: #ECEFF1;
+    margin: 0 16px 0 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    position: sticky;
+    bottom: 10px;
+    margin-top: 10px;
+
+    a {
+      color: #8899A8;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  .title {
+    align-items: center;
+    border-bottom: 1px solid #d3dce4;
+    padding: 10px 0;
+    height: $height;
+
+    @media screen and (max-width: 768px) {
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .left {
+      align-items: center;
+
+      .logo {
+        height: 40px;
+        width: 40px;
+        border-radius: 4px;
+        font: 28px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        text-align: center;
+        background: #fff;
+        margin-right: 16px;
+      }
+
+      .title-main {
+        color: rgb(59, 69, 78);
+        font: inherit;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+
+    .right {
+      img {
+        width: 24px;
+        height: 24px;
+        color: #79838e;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .menu-container {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      cursor: pointer;
+      padding: 8px;
+      margin-right: 10px;
+      border-radius: 50%;
+
+      &:hover {
+        background: #F5F7F9;
+      }
+    }
+  }
+
+  @media screen and (max-width:760px) {
+
+
+    .tab-container {
+      transform: translateX(-110%);
+      display: block;
+      position: fixed;
+      z-index: 10000;
+      bottom: 0;
+      background: #F5F7F9;
+      left: 0;
+      transition: ease .3s;
+      top: 0;
+      height: 100vh;
+
+    }
+
+    .open-menu {
+      transform: translateX(0);
+    }
+  }
+
+  .mobile-title-tab {
+    height: 64px;
+    display: flex;
+    box-shadow: -4px 7px 10px -9px rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid #d3a5ff;
+    background: #fff;
+    margin-left: -11px;
+
+    div {
+      cursor: pointer;
+      height: fit-content;
+    }
+
+    @media screen and (min-width:768px) {
+      height: 0;
+      display: none;
+    }
+
+
+  }
+
+  .tab-selections {
+    height: calc(100vh - #{$height});
+    overflow-y: scroll;
+
+    @media screen and (max-width: 768px) {
+      width: 300px;
+    }
+
+    .tab-group {
+      cursor: pointer;
+
+      .tab-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #5f6c78;
+        font-family: gitbook-content-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      }
+
+      .child {
+        border-left: 1px solid #d3dce4;
+      }
+
+      .child-name {
+        color: rgba(136, 153, 168, 1);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .expand-icon {
+    fill: #79838e;
+    width: 24px;
+    height: 24px;
+  }
+
+  .active {
+    background: #fff;
+    color: #d3a5ff;
+    border: 1px solid #d3dce4;
+    border-right: none;
+  }
+
+  .active[role='no-boder-top'] {
+    border-top: none;
+  }
+}
+
+.search-container {
+  position: absolute;
+  top: 24px;
+  z-index: 200;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    top: 10%;
+  }
+  .search-input-container {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 0 15px;
+    width: 95%;
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+      margin: 0 auto;
+      top: 10%;
+    }
+
+    .search-input {
+      width: 100%;
+      background: #F5F7F9;
+      align-items: center;
+      padding: 0 16px;
+      border-radius: 5px;
+      color: #A3B0BC;
+
+      img {
+        width: 24px;
+        height: 24px;
+        filter: invert(80%) sepia(29%) saturate(134%) hue-rotate(167deg) brightness(83%) contrast(86%);
+      }
+
+      input {
+        line-height: 24px;
+        padding: 16px 24px;
+        background: unset;
+        border: none;
+        flex-grow: 10;
+
+      }
+    }
+
+    div {
+      cursor: pointer;
+      font-size: 20px;
+      display: none;
+
+      @media screen and (max-width:768px) {
+        display: block;
+      }
+    }
+
+  }
+}
